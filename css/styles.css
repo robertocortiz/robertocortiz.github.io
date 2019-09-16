@@ -35,7 +35,7 @@
 
 
 .demo-layout-transparent {
-  background: url('https://getmdl.io/assets/demos/transparent.jpg') center / cover;
+  background: "images/transparent.png" center / cover;
 }
 .demo-layout-transparent .mdl-layout__header,
 .demo-layout-transparent .mdl-layout__drawer-button {
