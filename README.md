@@ -42,7 +42,7 @@ The server-side is replaced by a static file (mock-server/house.json) that is us
 
 It contains a JSON object organized as follows:
 
-```json
+```
 {
     roomName1:{
         propertyA: stateA1,
@@ -54,7 +54,6 @@ It contains a JSON object organized as follows:
         propertyB: stateB2,
         propertyC: stateC2
     },
-    ...
 }
 ```
 
