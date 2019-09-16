@@ -12,7 +12,7 @@ The application will be executed on a plain HTTP server with no possibility to r
 
 ## Demo
 
-The Demo is available [here](https://robertocortiz.github.io/
+The Demo is available [here](https://robertocortiz.github.io)
 
 ## Download source code
 
