@@ -68,33 +68,36 @@
   <!-- Main script -->
   <script src="js/app.js"></script>
 
-  <script>
-      window.onload=function() {
-     
-       // Get the Object by ID
-       var a = document.getElementById("svgObject");
-       // Get the SVG document inside the Object tag
-       var svgDoc = a.contentDocument;
-     
-       // For each room, the 5 lines of code below will add a click event and then open the menu and hide the elements
-             // only show the one you selected
-       var bedroom1 = svgDoc.getElementById("bedroom1");
-       bedroom1.addEventListener('click', function () {
-          $('.mdl-layout__drawer-button').click();
-          $('.room-view').hide();
-                 $('.bedroom1-card').show();
-             });
-     
-       var bedroom2 = svgDoc.getElementById("bedroom2");
-       bedroom2.addEventListener('click', function () {
-          $('.mdl-layout__drawer-button').click();
-          $('.room-view').hide();
-          $('.bedroom2-card').show();
-       });
-     
-      };
-       
-     </script>
+  
 </body>
+
+
+<script>
+    window.onload=function() {
+   
+     // Get the Object by ID
+     var a = document.getElementById("svgObject");
+     // Get the SVG document inside the Object tag
+     var svgDoc = a.contentDocument;
+   
+     // For each room, the 5 lines of code below will add a click event and then open the menu and hide the elements
+           // only show the one you selected
+     var bedroom1 = svgDoc.getElementById("bedroom1");
+     bedroom1.addEventListener('click', function () {
+        $('.mdl-layout__drawer-button').click();
+        $('.room-view').hide();
+               $('.bedroom1-card').show();
+           });
+   
+     var bedroom2 = svgDoc.getElementById("bedroom2");
+     bedroom2.addEventListener('click', function () {
+        $('.mdl-layout__drawer-button').click();
+        $('.room-view').hide();
+        $('.bedroom2-card').show();
+     });
+   
+    };
+     
+   </script>
 
 </html>
