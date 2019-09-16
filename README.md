@@ -34,6 +34,8 @@ Each `<g>` tag represents a room (identified by the room name) which gathers all
 
 I had to break down the object and loop through the elements to be able to click on each room and bring up each corresponding menu
 
+Then had to ensure all rooms were visible if Menu was selected
+
 ## Mock Server
 
 The server-side is replaced by a static file (mock-server/house.json) that is used on read-only for the initial state of the application, which has all items turned off.
