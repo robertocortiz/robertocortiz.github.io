@@ -69,57 +69,31 @@
   <script src="js/app.js"></script>
 
   <script>
-      window.onload=function() {
-     
-       // Get the Object by ID
-       var a = document.getElementById("svgObject");
-       // Get the SVG document inside the Object tag
-       var svgDoc = a.contentDocument;
-     
-       // For each room, the 5 lines of code below will add a click event and then open the menu and hide the elements
-             // only show the one you selected
-       var bedroom1 = svgDoc.getElementById("bedroom1");
-       bedroom1.addEventListener('click', function () {
-          $('.mdl-layout__drawer-button').click();
-          $('.room-view').hide();
-                 $('.bedroom1-card').show();
-             });
-     
-       var bedroom2 = svgDoc.getElementById("bedroom2");
-       bedroom2.addEventListener('click', function () {
-          $('.mdl-layout__drawer-button').click();
-          $('.room-view').hide();
-          $('.bedroom2-card').show();
-       });
+     window.onload = function() {
 
-       var livingroom = svgDoc.getElementById("livingroom");
-       bedroom2.addEventListener('click', function () {
-          $('.mdl-layout__drawer-button').click();
-          $('.room-view').hide();
-          $('.livingroom-card').show();
-       });
+        // Get the Object by ID
+        var a = document.getElementById("svgObject");
+        // Get the SVG document inside the Object tag
+        var svgDoc = a.contentDocument;
 
-       var kitchen = svgDoc.getElementById("kitchen");
-       bedroom2.addEventListener('click', function () {
-          $('.mdl-layout__drawer-button').click();
-          $('.room-view').hide();
-          $('.kitchen-card').show();
-       });
+        var rooms = svgDoc.getElementsByTagName('g');
 
-       var bathroom = svgDoc.getElementById("bathroom");
-       bedroom2.addEventListener('click', function () {
-          $('.mdl-layout__drawer-button').click();
-          $('.room-view').hide();
-          $('.bathroom-card').show();
-       });
-     
-      };
-       
-     </script>
+        for (var i = 0; i < rooms.length; i++) {
+           rooms[i].addEventListener('click',(function (i) {
+              return function () {
+                 openMenu(rooms[i].id);
+              };
+           }(i)));
+        }
+     };
 
+     function openMenu(id) {
+        $('.mdl-layout__drawer-button').click();
+        $('.room-view').hide();
+        $('.'+id+'-card').show();
+      }
 
-
-
+  </script>
 </body>
 
 </html>
