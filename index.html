@@ -91,6 +91,27 @@
           $('.room-view').hide();
           $('.bedroom2-card').show();
        });
+
+       var livingroom = svgDoc.getElementById("livingroom");
+       bedroom2.addEventListener('click', function () {
+          $('.mdl-layout__drawer-button').click();
+          $('.room-view').hide();
+          $('.livingroom-card').show();
+       });
+
+       var kitchen = svgDoc.getElementById("kitchen");
+       bedroom2.addEventListener('click', function () {
+          $('.mdl-layout__drawer-button').click();
+          $('.room-view').hide();
+          $('.kitchen-card').show();
+       });
+
+       var bathroom = svgDoc.getElementById("bathroom");
+       bedroom2.addEventListener('click', function () {
+          $('.mdl-layout__drawer-button').click();
+          $('.room-view').hide();
+          $('.bathroom-card').show();
+       });
      
       };
        
