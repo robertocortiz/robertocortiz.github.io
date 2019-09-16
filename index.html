@@ -23,19 +23,19 @@
   <div class="demo-layout-transparent mdl-layout mdl-js-layout">
       <header class="mdl-layout__header mdl-layout__header--transparent">
           <div class="mdl-layout__header-row">
-            <!-- Title -->
+            <!-- Main Title -->
             <span class="mdl-layout-title">Jarvis Home Automation</span>
             <!-- Add spacer, to align navigation to the right -->
             <div class="mdl-layout-spacer"></div>
-            <!-- Navigation -->
+            <!-- First Navigation -->
             <nav class="mdl-navigation">
             </nav>
           </div>
         </header>
-      <!--Second Nav-->
+      <!--Second Navigation-->
       <div class="mdl-layout__drawer">
           <span class="mdl-layout-title">Jarvis</span>
-      <!--Navigation-->
+      <!--Switchboard list within Second Navigation-->
       <nav class="mdl-navigation">
         <ul id="switchboard" class="switchboard-list mdl-list">
         </ul>
@@ -85,6 +85,7 @@
   <!-- Main script -->
   <script src="js/app.js"></script>
 
+  <!--Create a way to select each indivial room and view the corresponding menu -->
   <script>
      window.onload = function() {
 
@@ -111,7 +112,7 @@
       }
 
   </script>
-
+<!--Have to make sure all rooms are visible if Menu is clicked though, otherwise what's the point-->
 <script>
 $(document.body).on('click', '.mdl-layout__drawer-button', function(){
   $('.room-view').show();
