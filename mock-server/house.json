@@ -2,26 +2,26 @@
     "bedroom1": {
         "light": true,
         "curtains": false,
-        "temperature": 21
+        "temperature": 72
     },
     "bedroom2": {
         "light": false,
         "curtains": true,
-        "temperature": 20
+        "temperature": 72
     },
     "livingroom": {
         "light": true,
         "curtains": true,
-        "temperature": 22
+        "temperature": 73
     },
     "bathroom": {
         "light": false,
         "curtains": false,
-        "temperature": 23
+        "temperature": 74
     },
     "kitchen": {
         "light": false,
         "curtains": true,
-        "temperature": 18
+        "temperature": 72
     }
 }
