@@ -112,7 +112,7 @@
   </script>
 
 <script>
-$('.mdl-layout__drawer-button').click(function() {
+$(document.body).on('click', '.mdl-layout__drawer-button', function(){
   $('.room-view').show();
 });
 
