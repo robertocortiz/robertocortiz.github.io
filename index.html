@@ -20,7 +20,23 @@
 </head>
 
 <body>
-  <div class="mdl-layout mdl-js-layout mdl-layout--fixed-drawer">
+
+
+    <style>
+        .demo-layout-transparent {
+          background: url('../images/transparent.jpg') center / cover;
+        }
+        .demo-layout-transparent .mdl-layout__header,
+        .demo-layout-transparent .mdl-layout__drawer-button {
+          /* This background is dark, so we set text to white. Use 87% black instead if
+             your background is light. */
+          color: white;
+        }
+        </style>
+
+
+  <div class="mdl-layout mdl-js-layout mdl-layout--fixed-drawer
+            mdl-layout--fixed-header">
     <div class="mdl-layout__drawer">
       <span class="mdl-layout-title">Jarvis</span>
       <nav class="mdl-navigation">
@@ -36,11 +52,6 @@
       </div>
     </main>
   </div>
-
-  <!-- 
-    I let the scripts splitted in different files for readability reasons.
-    Normally I would use a module bundler such as Webpack, but that would imply a development and production environment that I find too heavy for that kind of assignment.
-  -->
 
   <!-- Utils -->
   <script src="js/utils/serverApi.js"></script>
