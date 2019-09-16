@@ -20,7 +20,7 @@ The source code can be downloaded from [here](https://github.com/robertocortiz/r
 
 ## Description of Project
 
-This project was inspired by Mary Shaw's [Just Another Automated Home](https://github.com/marybeshaw/Just-Another-Automated-Home), Thomas Knochbloch's [Smart House](https://github.com/ThomasKnobloch/smart-house) and of course alot of references within [Google's MDL docs](https://getmdl.io/started/)
+This project was inspired by Mary Shaw's [Just Another Automated Home](https://github.com/marybeshaw/Just-Another-Automated-Home), Thomas Knochbloch's [Smart House](https://github.com/ThomasKnobloch/smart-house) and of course a lot of references within [Google's MDL docs](https://getmdl.io/started/), [W3Schools](https://www.w3schools.com/js/default.asp), [CodePen](https://codepen.io/), [jQuery Docs](https://api.jquery.com/on/)
 
 The project implements the MVC pattern in order to be flexible and extensible, I've used the core functionalities from the above projects and updated aesthetics and javascript functions that I needed to achieve desired state.
 
