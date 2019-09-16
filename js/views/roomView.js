@@ -63,7 +63,7 @@ RoomView.prototype = {
     <form action="#">
         <div id="${this.temperatureId}-textfield"class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
             <input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="${this.temperatureId}">
-            <label class="mdl-textfield__label" for="${this.temperatureId}">Temperature f°</label>
+            <label class="mdl-textfield__label" for="${this.temperatureId}">Temperature °F or °C</label>
             <span class="mdl-textfield__error">Input is not a number!</span>
         </div>
     </form>`;
